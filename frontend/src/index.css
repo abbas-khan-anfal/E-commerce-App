@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root
+{
+  --dark-blue : #464E9F;
+  --light-blue : #D7EBFF;
+  --light : #F9F9FF;
+}
+
+.mdBtn,.lgBtn
+{
+  background-color: var(--dark-blue);
+  padding: 7px 10px;
+  color: var(--light-blue);
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+.lgBtn
+{
+  width: 100%;
+}
+.lgBtn:disabled,.mdBtn:disabled {
+  color: var(--light);
+  cursor: not-allowed;
+  opacity: 0.6; /* Optional: makes it appear faded */
+}
+.mdBtn.lightBtn
+{
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+.mdBtn.active
+{
+  border: 2px solid var(--dark-blue);
+}
+.mdBtn.red
+{
+  background-color: brown;
+  padding: 3px 8px;
+}
+.mdBtn.green
+{
+  background-color: green;
+  padding: 3px 8px;
+}
+.siteTitle
+{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.linkBtn
+{
+  color: var(--dark-blue);
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+/* form */
+label
+{
+  font-size: 15px;
+  color: grey;
+}
+.inputField
+{
+  padding: 7px 5px;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--dark-blue);
+  border-radius: 5px;
+}
+.inputField:focus
+{
+  outline: 2px solid var(--dark-blue);
+}
+/* file upload input */
+.file-upload-area
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border: 2px dashed var(--dark-blue);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.fileInput
+{
+  display: none;
+}
+.file-upload-label
+{
+  font-size: 17px;
+  color: var(--dark-blue);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* file upload input */
+/* //pagination */
+.pagination .page-link
+{
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    cursor: pointer;
+}
+.pagination .page-item.active .page-link
+{
+    background-color: var(--dark-blue);
+    color: var(--light);
+    border: 1px solid var(--dark-blue);
+}
+.pagination .page-item.disabled .page-link
+{
+    background-color: var(--dark-blue);
+    color: var(--light);
+    border: 1px solid var(--dark-blue);
+    opacity: 0.6;
+}
+
+/* // products */
+.productContainer
+{
+    background-color: var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card
+{
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 15px;
+}
+.card:hover img
+{
+    transform: scale(1.1);
+}
+.card .wishlistBtn
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: var(--light-blue);
+    font-size: 17px;
+    font-weight: 500;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    z-index: 1;
+    color: var(--dark-blue);
+}
+.card .cardImgDiv
+{
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    
+}
+.card img
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  object-fit: contain; /* Show the full image */
+  background-color: #f3f3f3; /* Optional: Add a background for non-filled areas */
+}
+.card .card-body
+{
+    padding: 10px;
+}
+.card .card-body h4
+{
+    font-size: 17px;
+}
+.card .card-body h5
+{
+    font-size: 15px;
+}
+.card .card-body h5 s
+{
+    color: brown;
+    font-style: italic;
+    font-size: 16px;
+}
+/* table */
+.dashboardTable table thead
+{
+  font-size: 16px;
+  font-weight: normal !important;
+}
+.dashboardTable table tbody
+{
+  font-size: 15px;
+}

@@ -1,0 +1,59 @@
+.fltrByCategory, .fltrByPrice
+{
+    border: 1px solid var(--dark-blue);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.filterTitle
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.fltrByCategory .categoryDiv
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.fltrByPrice
+{
+    margin-top: 0px;
+}
+
+/* //range styling */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100%; /* Full width */
+    height: 10px; /* Track height */
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @media (max-width: 992px)
+  {
+    .fltrByCategory
+    {
+        margin-top: 20px;
+    }
+  }
+  

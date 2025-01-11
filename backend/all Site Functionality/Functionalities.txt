@@ -1,0 +1,9 @@
+
+Add To Cart : 
+if you want to add to cart a product, first of all on the click of add to cart button, you should pass the p_id and u_id and then get the quantity from the p_id, after that first add the quantity with total price of the product and get the total_amount after that get the single product price.
+
+
+
+
+Fetch All Cart Item In Cart Page:
+to get all cart item in cart page, first you need to get the user id and then find the products with that related id,

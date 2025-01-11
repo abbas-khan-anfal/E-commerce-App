@@ -1,0 +1,121 @@
+footer
+{
+	background-color: var(--light-blue);
+}
+footer .row
+{
+	padding: 80px 0px 30px 0px;
+}
+footer .col1
+{
+	padding: 0px 100px 0px 0px;
+}
+footer .col1 img
+{
+	height: 40px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+footer .col1 p
+{
+	color: grey;
+	font-size: 14px;
+}
+footer .col1 ul li
+{
+	display: inline-block;
+	list-style: none;
+}
+footer .col1 ul li a
+{
+	color: grey;
+	font-size: 23px;
+	padding: 0px 5px;
+	transition: 0.3s;
+}
+footer .col2
+{
+	padding: 5px;
+}
+footer .col2 h5
+{
+	color: var(--dark-blue);
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+footer .col2 ul li
+{
+	display: block;
+	list-style: none;
+}
+footer .col2 ul li a
+{
+	color: grey;
+	text-decoration: none;
+	font-size: 15px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+footer .col3
+{
+	padding: 5px;
+}
+footer .col3 h5
+{
+	color: var(--dark-blue);
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+footer .col3 p
+{
+	color: grey;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+footer .col3 input
+{
+	background-color: var(--light);
+	border: none;
+	border: none;
+    border-radius: 5px;
+	padding: 5px;
+	color: var(--dark-blue);
+}
+footer .col3 input:focus
+{
+	outline: 3px solid var(--dark-blue);
+}
+footer .col4
+{
+	padding-top: 40px;
+	text-align: center;
+	border-top: 1px solid grey;
+}
+footer .col4 p
+{
+	color: grey;
+	font-size: 14px;	
+}
+@media only screen and (min-width: 200px) and (max-width: 567px)
+{
+	footer .col1
+	{
+		text-align: center;
+		padding: 0px;
+		padding-bottom: 30px;
+	}
+	footer .col2
+	{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	footer .col3
+	{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	footer .col3 input
+	{
+		text-align: center;
+	}
+}

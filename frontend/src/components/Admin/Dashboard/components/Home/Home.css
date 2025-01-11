@@ -1,0 +1,26 @@
+.DashBoardHome .card
+{
+    background-color: var(--dark-blue);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+}
+.DashBoardHome .card:hover
+{
+    border: 2px solid var(--light-blue);
+}
+.DashBoardHome .card i
+{
+    color: var(--light-blue);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.DashBoardHome .card h3
+{
+    color: whitesmoke;
+}
+.DashBoardHome .card span
+{
+    color: var(--light-blue);
+}

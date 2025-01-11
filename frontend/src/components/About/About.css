@@ -1,0 +1,111 @@
+.aboutusSection
+{
+    background-color: var(--light);
+}
+.why_choose_us img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.why_choose_us .col1 .top_heading, .who_we_are .top_heading, .our_team .top_heading
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: var(--dark-blue);
+}
+.why_choose_us .col1 .top_p
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: grey;
+}
+.why_choose_us .service_col
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.why_choose_us .service_col i
+{
+    font-size: 30px;
+    color: var(--dark-blue);
+    padding-bottom: 20px;
+}
+.why_choose_us .service_col h6
+{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+.why_choose_us .service_col p
+{
+    font-size: 15px;
+    color: grey;
+}
+
+
+.who_we_are
+{
+    /*background-color: #007e66;*/
+}
+.who_we_are .main_col
+{
+    background-color: var(--dark-blue);
+    border-radius: 10px; 
+}
+.who_we_are .col1 h1
+{
+    font-size: 40px;
+    font-style: italic;
+    color: var(--light-blue);
+    padding-bottom: 10px;
+}
+.who_we_are .col1 p
+{
+    color: var(--light-blue);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.who_we_are .col2 img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.our_team
+{
+    padding: 40px 0px;
+}
+.our_team .card
+{
+    border: none;
+    border-radius: 5px;
+}
+.our_team .card img
+{
+    border-radius: 3px;
+    height: 150px;
+}
+.our_team .card h4
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+.our_team .card span
+{
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    display: block;
+}
+@media only screen and (min-width: 200px) and (max-width: 567px)
+{
+    .who_we_are .main_col,.why_choose_us
+    {
+        text-align: center;
+    }
+}

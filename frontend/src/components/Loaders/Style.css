@@ -1,0 +1,29 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: #464e9f #d7ebff;
+    animation: l1 1s infinite;
+  }
+  .loader.md-loader
+  {
+    width: 40px;
+  }
+  @keyframes l1 {to{transform: rotate(.5turn)}}
+
+/* ============ */
+.md-loader-container,.lg-loader-container
+{
+    background-color: var(--light);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lg-loader-container
+{
+    height: 100vh;
+}

@@ -1,0 +1,13 @@
+.contactSection
+{
+    background-color: var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contactSection iframe
+{
+    border:1px solid var(--dark-blue);
+    height:300px;  
+    width:100%;
+    border-radius:5px;
+}

@@ -1,0 +1,116 @@
+.productDetailPage
+{
+    background-color: var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.productDetailPage .lgImg
+{
+    height: 400px;
+    width: 100%;
+    transition: all 0.4s;
+    object-fit: contain;
+}
+.productDetailPage .lgImg:hover
+{
+    transform: scale(1.5);
+}
+.productDetailPage .lgImgDiv
+{
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+}
+.productDetailPage .smImg
+{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.productDetailPage .smImg.active
+{
+    border: 2px solid var(--dark-blue);
+}
+.productDetailPage .detailSection p
+{
+    font-size: 15px;
+    font-style: italic;
+    color: grey;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.productDetailPage .detailSection p a
+{
+    font-style: normal;
+}
+.productDetailPage .detailSection .productTitle
+{
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.productDetailPage .detailSection h4
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.productDetailPage .detailSection h4 s
+{
+    color: brown;
+}
+.productDetailPage .detailSection h6
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 15px;
+}
+.productDetailPage form
+{
+    position: relative;
+    margin-bottom: 20px;
+    width: 150px;
+}
+.productDetailPage form input
+{
+    padding: 8px 5px;
+    width: 100%;
+    text-align: center;
+}
+.productDetailPage form button
+{
+    position: absolute;
+    top: 0;
+    padding: 9px 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: var(--light);
+    border-radius: 3px;
+}
+.productDetailPage form button:disabled {
+    /* position: absolute;
+    top: 0; */
+    padding: 9px 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: var(--light);
+    border-radius: 3px;
+    cursor: not-allowed;
+    opacity: 0.6; /* Optional: makes it appear faded */
+}
+
+.productDetailPage form .leftBtn
+{
+    left: 0;
+}
+.productDetailPage form .rightBtn
+{
+    right: 0;
+}

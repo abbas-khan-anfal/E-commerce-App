@@ -1,0 +1,11 @@
+.notFound
+{
+    background-color: var(--light);
+    height: 100vh;
+    padding-top: 100px;
+}
+.notFound h2
+{
+    font-size: 30px;
+    color: var(--dark-blue);
+}

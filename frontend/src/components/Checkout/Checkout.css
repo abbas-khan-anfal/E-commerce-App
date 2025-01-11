@@ -1,0 +1,70 @@
+.checkout_div
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.checkout_div .home_link a
+{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.checkout_div input[type='radio']
+{
+    /*hide the default radio btn*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid var(--dark-blue);
+    position: relative;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+input[type="radio"]:checked::before {
+    /* Create a circular inner circle for the checked state */
+    content: "";
+    position: absolute;
+    /* Center the inner circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Define dimensions */
+    width: 10px;
+    height: 10px;
+    /* Create a circular shape */
+    border-radius: 50%;
+    /* Specify color */
+    background-color: var(--dark-blue);
+}
+
+
+.checkout_details
+{
+    background: #F5F5F5;
+    height: 100%;
+    margin-top: 50px;
+    padding: 20px;
+}
+.checkout_details h6
+{
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.checkout_details .p_title,.checkout_details .p_price
+{
+    color: grey;
+    font-size: 15px;
+    padding: 5px 0px;
+    display: block;
+}
+.checkout_details .total_price
+{
+    color: #CA1547;
+}

@@ -1,0 +1,293 @@
+/* first nav */
+.firstNav
+{
+    width: 100%;
+    height: 60px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.firstNav .logo
+{
+    height: 45px;
+    width: 150px;
+}
+.firstNav .logoDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstNav button
+{
+    height: 30px;
+    width: 30px;
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.badgeBtn
+{
+    position: relative;
+}
+.badgeBtn span
+{
+    display: inline-block;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: var(--dark-blue);
+    border-radius: 50px;
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    color: var(--light-blue);
+}
+
+/* seocnd nav */
+.secondNav
+{
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondNav ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+.secondNav ul li
+{
+    display: inline-block;
+}
+.secondNav ul li a
+{
+    display: inline-block;
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+.secondNav ul li a:hover
+{
+    border-bottom: 2px solid var(--light);
+}
+.secondNav ul li a.active
+{
+    border-bottom: 2px solid var(--light);
+}
+
+/* dropdown */
+.dropDown .dropDownToggler
+{
+    position: relative;
+}
+.dropDown .dropDownMenu
+{
+    position: absolute;
+    background-color: var(--light-blue);
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: 1px;
+    display: none;
+}
+.dropDown .dropDownMenu.show
+{
+    display: block;
+}
+.dropDown .dropDownMenu a
+{
+    display: block;
+    color: var(--dark-blue);
+    border: none !important;
+    border-radius: 5px;
+}
+.dropDown .dropDownMenu a:hover
+{
+    background-color: var(--dark-blue) !important;
+    color: var(--light-blue) !important;
+}
+
+
+/* third nav */
+.thirdNav
+{
+    background-color: var(--light);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.4s;
+    z-index: 1;
+}
+.thirdNav.show
+{
+    display: flex;
+}
+.thirdNav form
+{
+    position: relative;
+}
+.thirdNav input
+{
+  background-color: var(--light-blue);
+  color: black;
+  border: none;
+  outline: 1px solid transparent;
+  padding: 6px 10px;
+  width: 350px;
+  font-size: 15px;
+  font-style: italic;
+  border-radius: 5px;
+}
+.thirdNav input:focus
+{
+    font-style: normal;
+}
+.thirdNav button
+{
+  background-color: var(--dark-blue);
+  color: var(--light);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navOpenToggler,.navCloseToggler
+{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--light-blue) !important;
+    border: none;
+    color: var(--dark-blue) !important;
+    margin: 0px !important;
+    margin-right: 5px;
+    display: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+.navCloseToggler
+{
+    margin: 0px !important;
+    color: var(--dark-blue) !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    margin-left: 10px !important;
+}
+
+/* Media query for mobile and tablet both*/
+@media (max-width: 992px)
+{
+    .secondNav
+    {
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        display: block;
+        top: 0;
+        left: -100%;
+        z-index: 111;
+        padding: 5px;
+        transition: all 0.3s;
+        overflow-y: auto;
+    }
+    .secondNav.show
+    {
+        left: 0;
+    }
+    .secondNav ul li
+    {
+        display: block;
+        margin: 1px 0px;
+    }
+    .secondNav ul li a
+    {
+        display: block;
+        padding: 10px 10px;
+        border-bottom: none;
+        border-radius: 5px;
+    }
+    .secondNav ul li a:hover
+    {
+        background-color: var(--light-blue) !important;
+        color: var(--dark-blue) !important;
+        border-bottom: none;
+    }
+    .secondNav ul li a.active
+    {
+        background-color: var(--light-blue) !important;
+        color: var(--dark-blue) !important;
+        border-bottom: none;
+    }
+    .navOpenToggler,.navCloseToggler
+    {
+        display: inline-block;
+    }
+    .dropDown .dropDownMenu
+    {
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+/* media query for mobile */
+@media only screen and (min-width : 200px) and (max-width: 567px)
+{
+    .firstNav .logo
+    {
+        height: 35px;
+        width: 140px;
+    }
+    .secondNav
+    {
+        width: 80%;
+    }
+    .thirdNav input
+    {
+        width: 250px;
+    }
+}
+/* media query for tablet */
+@media only screen and (min-width : 568px) and (max-width: 992px)
+{
+    .firstNav .logo
+    {
+        height: 38px;
+        width: 145px;
+    }
+    .secondNav
+    {
+        width: 30%;
+    }
+    .thirdNav input
+    {
+        width: 300px;
+    }
+}

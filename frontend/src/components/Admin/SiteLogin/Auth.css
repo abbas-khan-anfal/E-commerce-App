@@ -1,0 +1,59 @@
+.authContainer
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* =======profile page============= */
+.profilePage
+{
+    background-color: var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.profilePage .userSection
+{
+    padding: 10px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 5px;
+    text-align: center;
+}
+.profilePage .userSection .profile-pic
+{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid var(--dark-blue);
+    margin: 0px auto 10px auto;
+}
+.profilePage .userSection img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profilePage .userSection h4
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+.profilePage .userSection h6
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 15px;
+}
+.profilePage .userSection h6 span
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-blue);
+    font-weight: normal;
+    margin-bottom: 15px;
+}
