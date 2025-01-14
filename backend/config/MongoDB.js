@@ -1,15 +1,12 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose';
 
 const connectDB = async () => {
-    try
-    {
-        mongoose.connect(process.env.MONGODB_URI)
-        console.log("DB Connected Successfully")
+    try {
+        await mongoose.connect('mongodb+srv://mydemoforuser:demo500account25@cluster0.updwn.mongodb.net/ecommerce?retryWrites=true&w=majority');
+        console.log('DB Connected Successfully');
+    } catch (error) {
+        console.log('Error Connecting DB:', error);
     }
-    catch(error)
-    {
-        console.log("Error Connecting DB : ", error.message)
-    }
-}
+};
 
 export default connectDB;
