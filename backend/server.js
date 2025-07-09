@@ -67,7 +67,7 @@ app.use('/message', messageRouter)
 
 // api for server checking
 app.get('/', (req, res) => {
-  res.json({success : true, message : "Hello api"});
+  res.send("Hello world! Api is working fine");
 })
 
 // app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
