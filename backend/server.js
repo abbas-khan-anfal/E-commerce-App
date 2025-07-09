@@ -25,7 +25,7 @@ app.use('/uploads', express.static('uploads'))
 // middlewares
 app.use(express.json())
 app.use(cors({
-  origin : [process.env.FRONTEND_URL],
+  origin : ['https://e-commerce-frontend-five-mauve.vercel.app'],
   methods : ["POST", "GET", "PUT", "DELETE"],
   credentials : true
 }))
