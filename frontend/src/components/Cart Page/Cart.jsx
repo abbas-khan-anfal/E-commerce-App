@@ -37,8 +37,8 @@ function Cart() {
       }
 
       const removeCartProduct = async (pid) => {
-        if(confirm("Do you really want to remove this product from cart?"))
-		{
+        // if(confirm("Do you really want to remove this product from cart?"))
+		// {
 			setLoading(true);
 			try
 			{
@@ -57,7 +57,7 @@ function Cart() {
 			{
 				setLoading(false);
 			}
-		}
+		// }
       }
 
 

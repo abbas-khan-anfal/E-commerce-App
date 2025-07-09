@@ -35,8 +35,8 @@ function Users() {
   }
   // delete category handler
   const deleteUserHandler = async (id) => {
-    if(confirm("Do you really want to delete this user?"))
-    {
+    // if(confirm("Do you really want to delete this user?"))
+    // {
       setLoading(true);
         try 
         {
@@ -56,7 +56,7 @@ function Users() {
         {
           setLoading(false);
         }
-    }
+    // }
       
   }
 

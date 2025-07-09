@@ -35,8 +35,8 @@ function AllBrand() {
 
   // delete brand handler
   const deleteBrandHandler = async (id) => {
-    if(confirm("Do you really want to delete this brand?"))
-    {
+    // if(confirm("Do you really want to delete this brand?"))
+    // {
         setLoading(true);
         try 
         {
@@ -56,7 +56,7 @@ function AllBrand() {
         {
           setLoading(false);
         }
-    }
+    // }
       
   }
 

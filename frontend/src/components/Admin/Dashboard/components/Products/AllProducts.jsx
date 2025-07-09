@@ -36,8 +36,8 @@ function AllProducts() {
 
   // delete category handler
   const deleteProductHandler = async (id) => {
-    if(confirm("Do you really want to delete this Product?"))
-    {
+    // if(confirm("Do you really want to delete this Product?"))
+    // {
       setLoading(true);
         try 
         {
@@ -58,7 +58,7 @@ function AllProducts() {
         {
           setLoading(false);
         }
-    }
+    // }
       
   }
 

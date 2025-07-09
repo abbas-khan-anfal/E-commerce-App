@@ -37,8 +37,8 @@ function Wishlist() {
       }
 
       const removeWishlistProduct = async (pid) => {
-        if(confirm("Do you really want to remove this product from wishlist?"))
-        {
+        // if(confirm("Do you really want to remove this product from wishlist?"))
+        // {
           setLoading(true);
           try
           {
@@ -56,7 +56,7 @@ function Wishlist() {
           {
             setLoading(false);
           }
-        }
+        // }
       }
 
     useEffect(() => {

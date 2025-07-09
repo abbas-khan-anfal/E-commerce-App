@@ -14,8 +14,8 @@ function Profile() {
     const navigate = useNavigate();
 
     const orderStateUpdater = async (oid) => {
-        if(confirm("Do you really recieved your product."))
-        {
+        // if(confirm("Do you really recieved your product."))
+        // {
             setLoading(true);
             try
             {
@@ -32,7 +32,7 @@ function Profile() {
             {
                 setLoading(false);
             }
-        }
+        // }
     }
 
     useEffect(() => {

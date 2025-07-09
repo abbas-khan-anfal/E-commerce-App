@@ -35,8 +35,8 @@ function AllCategories() {
   }
   // delete category handler
   const deleteCategoryHandler = async (id) => {
-    if(confirm("Do you really want to delete this category?"))
-    {
+    // if(confirm("Do you really want to delete this category?"))
+    // {
       setLoading(true);
         try 
         {
@@ -56,7 +56,7 @@ function AllCategories() {
         {
           setLoading(false);
         }
-    }
+    // }
       
   }
 

@@ -35,8 +35,8 @@ function Messages() {
   }
   // delete category handler
   const deleteMessageHandler = async (id) => {
-    if(confirm("Do you really want to delete this message?"))
-    {
+    // if(confirm("Do you really want to delete this message?"))
+    // {
       setLoading(true);
         try 
         {
@@ -56,7 +56,7 @@ function Messages() {
         {
           setLoading(false);
         }
-    }
+    // }
       
   }
 
