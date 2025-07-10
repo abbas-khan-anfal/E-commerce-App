@@ -13,7 +13,7 @@ import wishlistRouter from './routes/Wishlist.js'
 import cartRouter from './routes/Cart.js'
 import orderRouter from './routes/Order.js'
 import homeRouter from './routes/DashHome.js'
-import GlobalError from './utils/GlobalError.js';
+import {GlobalError} from './utils/GlobalError.js';
 import connectDB from './config/Db.js'
 
 // app config
