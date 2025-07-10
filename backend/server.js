@@ -1,9 +1,8 @@
-import express, { json } from 'express'
+import express from 'express'
 import 'dotenv/config'
 import cors from 'cors'
 
 import cookieParser from 'cookie-parser'
-import connectDB from './config/MongoDB.js'
 import adminRouter from './routes/Admin.js'
 import userRouter  from './routes/User.js'
 import categoryRouter from './routes/Category.js'
@@ -15,10 +14,11 @@ import cartRouter from './routes/Cart.js'
 import orderRouter from './routes/Order.js'
 import homeRouter from './routes/DashHome.js'
 import GlobalError from './utils/GlobalError.js';
+import connectDB from './config/Db.js'
 
 // app config
 const app = express()
-connectDB()
+connectDB();
 
 // static files
 // app.use('/uploads', express.static('uploads'))
