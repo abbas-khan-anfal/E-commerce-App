@@ -1,7 +1,7 @@
 import express, { json } from 'express'
 import 'dotenv/config'
 import cors from 'cors'
-import path from 'path'
+
 import cookieParser from 'cookie-parser'
 import connectDB from './config/MongoDB.js'
 import adminRouter from './routes/Admin.js'
@@ -20,16 +20,17 @@ const app = express()
 connectDB()
 
 // static files
-app.use('/uploads', express.static('uploads'))
+// app.use('/uploads', express.static('uploads'))
 
 // middlewares
-app.use(express.json())
+app.use(express.json());
+app.use(cookieParser());
 app.use(cors({
-  origin : ['https://e-commerce-frontend-five-mauve.vercel.app'],
+  // origin : ['https://e-commerce-frontend-five-mauve.vercel.app'],
+  origin : ['http://localhost:3000/'],
   methods : ["POST", "GET", "PUT", "DELETE"],
   credentials : true
-}))
-app.use(cookieParser())
+}));
 
 // endpoints
 
@@ -70,11 +71,11 @@ app.get('/', (req, res) => {
   res.send("Hello world! Api is working fine");
 })
 
-// app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
+app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
 
 // server listening
 // app.listen(port, () => {
 //   console.log(`App listening on port ${port}`)
 // })
 
-export default app;
+// export default app;
