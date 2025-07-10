@@ -27,9 +27,9 @@ connectDB()
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin : ['https://e-commerce-frontend-five-mauve.vercel.app', 'https://e-commerce-frontend-git-master-abbas-khan-anfals-projects.vercel.app'],
+  // access to all
+  origin : "*",
   methods : ["POST", "GET", "PUT", "DELETE"],
-  credentials : true
 }));
 
 // endpoints
