@@ -14,6 +14,7 @@ import wishlistRouter from './routes/Wishlist.js'
 import cartRouter from './routes/Cart.js'
 import orderRouter from './routes/Order.js'
 import homeRouter from './routes/DashHome.js'
+import GlobalError from './utils/GlobalError.js';
 
 // app config
 const app = express()
@@ -69,6 +70,10 @@ app.use('/message', messageRouter)
 app.get('/', (req, res) => {
   res.send("Hello world! Api is working fine");
 })
+
+// use global error
+app.use(GlobalError);
+
 
 // app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
 
