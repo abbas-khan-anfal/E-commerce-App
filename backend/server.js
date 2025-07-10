@@ -26,8 +26,7 @@ connectDB()
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin : ['https://e-commerce-frontend-five-mauve.vercel.app'],
-  // origin : ['http://localhost:3000/'],
+  origin : ['https://e-commerce-frontend-five-mauve.vercel.app', 'https://e-commerce-frontend-git-master-abbas-khan-anfals-projects.vercel.app'],
   methods : ["POST", "GET", "PUT", "DELETE"],
   credentials : true
 }));
@@ -71,11 +70,11 @@ app.get('/', (req, res) => {
   res.send("Hello world! Api is working fine");
 })
 
-app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
+// app.listen(process.env.PORT, () => console.log(`App Listening on Port ${process.env.PORT} On Development Mode`))
 
 // server listening
 // app.listen(port, () => {
 //   console.log(`App listening on port ${port}`)
 // })
 
-// export default app;
+export default app;
