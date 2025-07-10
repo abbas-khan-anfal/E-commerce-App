@@ -26,7 +26,7 @@ function Login() {
       toast.success(response.data.message);
       userStateHandler();
       // go back to the stack back page
-      navigate(-1);
+      navigate('/shop');
     }
     catch(error)
     {
