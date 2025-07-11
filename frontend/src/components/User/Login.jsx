@@ -44,7 +44,7 @@ function Login() {
             <p><NavLink to="/" className='linkBtn'><i className="fa-solid fa-house"></i> Home <i className="fa-solid fa-angle-right"></i></NavLink> Login</p>
           </div>
 
-          <div className="col-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <form action="" onSubmit={submitHandler}>
               <Title title="Login" />
               <div className="mb-3 mt-4">
