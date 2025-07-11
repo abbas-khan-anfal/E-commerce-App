@@ -3,6 +3,8 @@
 ## Note:
 This project might not work as expected, because of limited vercel memory and other vercel related issues, but will work fine on premium plan. And you can also clone the repository in your computer and test it.
 
+## About This Project:
+
 A comprehensive web application for managing an online store, featuring CRUD operations, user authentication, a powerful admin dashboard, cloud file uploading with Cloudinary, and integrated payment processing using Stripe. This app includes cart and order management, making it a complete solution for online retail.
 
 ## Features
