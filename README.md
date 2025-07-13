@@ -19,7 +19,10 @@ A comprehensive web application for managing an online store, featuring CRUD ope
 - **Cart Management**: Add to and manage the shopping cart.
 - **File Uploading**: Upload product images to Cloudinary.
 - **Payment Integration**: Process payments securely using Stripe.
-- **Admin Dashboard**: Access a dedicated dashboard for managing the store, accessible at `http://localhost:3000/admin`.
+- **Admin Dashboard**: Access a dedicated dashboard for managing the store, accessible at `https://e-commerce-frontend-five-mauve.vercel.app/admin`.
+- **Also to access admin dashboard use these credentials :
+- **Email : admin@gmail.com
+- **Password : admin123
 
 ## Project Structure
 
