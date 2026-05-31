@@ -90,14 +90,14 @@ Ensure the following environment variables are set in the `backend/.env` file:
 ```
 PORT = 4000
 JWT_SECRET = LF2394895KKELFJELFLEJF99
-STRIPE_SECRET_KEY = sk_test_51P8jfEHEvJKDoBQRByiiftmiD5xaMVRl5Iu9ncKqJsU9TtsZDSpiG5a1sGbdJWtUofq11V2ZPwISwqIm6KYtd3nj00PPrvntfP
+STRIPE_SECRET_KEY = sk_ldkjfldfjdlfjdlkfj
 FRONTEND_URL = http://localhost:3000
 BACKEND_URL = http://localhost:4000
 
 # Cloudinary keys
-CLOUD_NAME = dll3nwi5k
-CLOUD_API_KEY = 439685841895313
-CLOUD_API_SECRET = -zpNTYKD75IK9WXPbg72tC83D30
+CLOUD_NAME = dldlfkjdlkfj
+CLOUD_API_KEY = 39383838383838
+CLOUD_API_SECRET = -zldfjldjflkdfjldfjdlfjd
 ```
 
 ## Notes
