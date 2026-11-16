@@ -89,15 +89,15 @@ Ensure the following environment variables are set in the `backend/.env` file:
 
 ```
 PORT = 4000
-JWT_SECRET = LF2394895KKELFJELFLEJF99
-STRIPE_SECRET_KEY = sk_ldkjfldfjdlfjdlkfj
+JWT_SECRET = LF2394895KKELFJELFL3UIO0
+STRIPE_SECRET_KEY = sk_.........
 FRONTEND_URL = http://localhost:3000
 BACKEND_URL = http://localhost:4000
 
 # Cloudinary keys
-CLOUD_NAME = dldlfkjdlkfj
-CLOUD_API_KEY = 39383838383838
-CLOUD_API_SECRET = -zldfjldjflkdfjldfjdlfjd
+CLOUD_NAME = cloudinary_cloud_name
+CLOUD_API_KEY = cloudinary_api_key
+CLOUD_API_SECRET = cloudinary_api_secret
 ```
 
 ## Notes
